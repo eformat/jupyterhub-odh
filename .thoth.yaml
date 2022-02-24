@@ -7,8 +7,9 @@ managers:
   - name: version
     configuration:
       maintainers:
-        - vpavlin
         - LaVLaS
+        - maroroman
+        - crobby
       assignees:
         - sesheta
       labels: [bot]
