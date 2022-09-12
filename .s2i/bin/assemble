@@ -27,5 +27,3 @@ cd ${JSP_UI_SRC_PATH}/templates/
 yes | cp -rf *.html /opt/app-root/share/jupyterhub/templates/
 
 fix-permissions /opt/app-root
-
-yum install postgresql-devel && yum clean all
