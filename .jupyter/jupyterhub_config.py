@@ -268,19 +268,18 @@ admin_users = os.environ.get('JUPYTERHUB_ADMIN_USERS')
 if admin_users:
     c.Authenticator.admin_users = set(admin_users.split(','))
 
-
 #Enable Traefik Proxy instead of the configurableHTTPPRoxy
-from jupyterhub_traefik_proxy import TraefikTomlConfigmapProxy
+#from jupyterhub_traefik_proxy import TraefikTomlConfigmapProxy
 
-c.JupyterHub.proxy_class = TraefikTomlConfigmapProxy
+#c.JupyterHub.proxy_class = TraefikTomlConfigmapProxy
 
-c.TraefikTomlConfigmapProxy.traefik_api_url = "http://traefik-proxy:8099"
+#c.TraefikTomlConfigmapProxy.traefik_api_url = "http://traefik-proxy:8099"
 
 # traefik api endpoint login username
-c.TraefikTomlConfigmapProxy.traefik_api_username = os.environ['TRAEFIK_API_USERNAME']
+#c.TraefikTomlConfigmapProxy.traefik_api_username = os.environ['TRAEFIK_API_USERNAME']
 # traefik api endpoint login password
-c.TraefikTomlConfigmapProxy.traefik_api_password = os.environ['TRAEFIK_API_PASSWORD']
+#c.TraefikTomlConfigmapProxy.traefik_api_password = os.environ['TRAEFIK_API_PASSWORD']
 
-c.TraefikTomlConfigmapProxy.cm_namespace = os.environ['NAMESPACE']
-c.TraefikTomlConfigmapProxy.cm_name = "traefik-rules"
-c.TraefikTomlConfigmapProxy.traefik_svc_namespace = os.environ['NAMESPACE']
+#c.TraefikTomlConfigmapProxy.cm_namespace = os.environ['NAMESPACE']
+#c.TraefikTomlConfigmapProxy.cm_name = "traefik-rules"
+#c.TraefikTomlConfigmapProxy.traefik_svc_namespace = os.environ['NAMESPACE']
