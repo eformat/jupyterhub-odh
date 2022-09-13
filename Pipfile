@@ -6,9 +6,10 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-openshift = "==0.13.1"
+kubernetes = "==11.0.0"
+openshift = "==0.11.2"
 pyyaml = "==6.0"
-jupyterhub-singleuser-profiles = {ref = "9fae848cb92ddfc50ac8da96e3f40064b1b67f59",git = "https://github.com/opendatahub-io/jupyterhub-singleuser-profiles.git", editable = true}
+jupyterhub-singleuser-profiles = {ref = "daffe7325cd76cb74a752a73eab9b673ce027a05",git = "https://github.com/eformat/jupyterhub-singleuser-profiles.git", editable = true}
 oauthenticator = {ref = "15.1.0",git = "https://github.com/jupyterhub/oauthenticator.git", editable = true}
 jupyterhub-traefik-proxy = {ref = "b468da04bf0057e9baeb458de6c3f9f677cfb79e", git = "https://github.com/opendatahub-io/traefik-proxy.git", editable = true}
 jupyterhub-idle-culler = "==1.2.1"
