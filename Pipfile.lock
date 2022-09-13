@@ -590,7 +590,7 @@
         "jupyterhub-singleuser-profiles": {
             "editable": true,
             "git": "https://github.com/eformat/jupyterhub-singleuser-profiles.git",
-            "ref": "5ae92d34331c4123ace9d8d389a6cbd343fa6814"
+            "ref": "de8ed414d5024913dfa1bdd52813e55c1f15d1cf"
         },
         "jupyterhub-traefik-proxy": {
             "editable": true,
